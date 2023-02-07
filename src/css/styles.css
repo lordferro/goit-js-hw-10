@@ -17,4 +17,28 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin-left: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  width: fit-content;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  width: fit-content;
+  padding: 10px;
+  margin-left: 40px;
+  background-color: #d8f1c1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
