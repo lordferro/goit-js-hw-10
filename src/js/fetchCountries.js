@@ -7,12 +7,11 @@ export function fetchCountries(name) {
     .then(response)
     }
 
-fetchCountries('Ukraine');
-
 function response(r) {
-      if (r.ok) {
-        return r.json();
+      if (!r.ok) {
+        Notify.failure('Oops, there is no country with that name');
+        throw new Error(r.status)
       }
-      return Notify.failure('Oops, there is no country with that name');
+      return r.json(); 
     };
 

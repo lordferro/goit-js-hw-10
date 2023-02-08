@@ -23,7 +23,7 @@ function onInputChange(e) {
   }
   fetchCountries(searchQuery)
     .then(getCountryArray)
-    .catch(error => console.log(error));
+    .catch(error => console.log(error.message));
 }
 
 function getCountryArray(array) {
